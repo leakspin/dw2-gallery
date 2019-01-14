@@ -1,0 +1,45 @@
+.home
+    .content
+        display: flex
+
+        .item
+            position: relative
+            width: 25%
+
+            .url
+                display: flex
+                justify-content: center
+                align-items: center
+                overflow: hidden
+
+                div
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    top: 0
+                    left: 0
+                    opacity: 0
+                    visibility: hidden
+                    transition: all .2s ease-out
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    flex-flow: column
+
+                &:hover
+                    div
+                        opacity: 1
+                        visibility: visible
+                        background: rgba(0,0,0,0.6)
+
+                .preview
+                    border-radius: 0
+                    flex-shrink: 0
+                    min-width: 100%
+                    min-height: 100%
+                .title, .description
+                    margin: 0
+                    color: white
+                    text-align: center
+                .description
+                    font-size: 0.8em

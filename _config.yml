@@ -1,0 +1,20 @@
+# Basic Info
+name: CMDR Leakspin
+description: A Distant Worlds 2 Gallery
+url: https://dw2.adrianmora.me
+
+analytics-google: UA-108062404-1
+
+# Socials
+twitter: CMDRLeakspin
+
+projects: true
+about: true
+blog: true
+show-tags: true
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jemoji
+  - jekyll-admin

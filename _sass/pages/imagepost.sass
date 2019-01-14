@@ -1,0 +1,43 @@
+.imagepost
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+
+    > .image
+        flex-shrink: 0
+        min-width: 100%
+        min-height: 100%
+
+    > .metadata
+        position: absolute
+        top: 0
+        left: 0
+        width: 30%
+
+        > .info
+            margin: 20px
+            padding: 15px
+            background: rgba(0,0,0,0.6)
+            color: $gama
+            border-radius: 4px
+
+            > .title
+                color: $gama
+                margin-top: 0
+
+            p
+                color: $gama
+                margin-bottom: 0
+
+            > .date
+                color: $gama
+                font-weight: 300
+                font-size: 1.4rem
+                text-transform: uppercase
+                text-align: center
+                display: block
+                letter-spacing: 1px
+                -webkit-font-smoothing: antialiased
+                text-rendering: optimizeLegibility

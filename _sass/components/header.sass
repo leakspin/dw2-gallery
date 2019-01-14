@@ -1,0 +1,39 @@
+.header-home
+    display: block
+    margin: 0 auto
+    z-index: 99
+
+    > .link > .selfie
+        width: 125px
+        margin-bottom: 25px
+        border-radius: 100%
+        transition: all .2s
+        box-shadow: 0
+        opacity: 1
+
+        &:hover
+            box-shadow: 0 0px 4px 0 rgba(0,0,0,0.18), 0 0px 12px 0 rgba(0,0,0,0.15)
+            opacity: .8
+
+    > .title
+        padding: 10px 13px
+        background: black
+        color: white
+
+        a
+            color: white
+            text-decoration: none
+
+            &:hover
+                border-bottom: 1px solid $gama
+
+        .name
+            font-size: 3rem
+            margin-right: 10px
+
+        .description
+            font-size: 1.85rem
+            font-weight: 300
+            font-style: normal
+            color: $gama
+            width: 70%

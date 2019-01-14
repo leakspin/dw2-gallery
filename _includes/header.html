@@ -1,0 +1,12 @@
+<header class="header-home">
+    <div class="title">
+        {% if page.title != "Home" %}
+            <a href="{{ site.url }}">
+        {% endif %}
+        <span class="name">{{ site.name }}</span>
+        <span class="description">{{ site.description }}</span>
+        {% if page.title != "Home" %}
+            </a>
+        {% endif %}
+    </div>
+</header>
