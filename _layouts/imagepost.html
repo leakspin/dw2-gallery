@@ -3,7 +3,6 @@ layout: page
 ---
 
 <div class="imagepost">
-    <img class="image" src="{{ page.image }}" />
     <div class="metadata">
         <div class="info">
             <h1 class="title">{{ page.title }}</h1>
@@ -14,6 +13,17 @@ layout: page
             </span>
 
             {{content}}
+
+            {% include pagination.html %}
         </div>
+    </div>
+    <div class="image">
+    {% if page.image %}
+        <img src="{{ page.image }}" />
+    {% else %}
+        {% for image in page.images %}
+            <img src="{{ image }}" />
+        {% endfor %}
+    {% endif %}
     </div>
 </div>

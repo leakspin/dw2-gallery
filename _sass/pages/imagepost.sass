@@ -5,10 +5,17 @@
     align-items: center
     overflow: hidden
 
+    @media #{$below}
+        flex-wrap: wrap
+
     > .image
-        flex-shrink: 0
-        min-width: 100%
-        min-height: 100%
+        display: flex
+        flex-wrap: wrap
+
+        img
+            flex-shrink: 0
+            min-width: 100%
+            min-height: 100%
 
     > .metadata
         position: absolute
@@ -16,16 +23,21 @@
         left: 0
         width: 30%
 
+        @media #{$below}
+            position: unset
+            width: 100%
+
         > .info
             margin: 20px
             padding: 15px
-            background: rgba(0,0,0,0.6)
+            background: rgba(0,0,0,0.75)
             color: $gama
             border-radius: 4px
 
             > .title
                 color: $gama
                 margin-top: 0
+                text-align: center
 
             p
                 color: $gama

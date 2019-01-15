@@ -6,11 +6,6 @@ url: https://dw2.adrianmora.me
 # Socials
 twitter: CMDRLeakspin
 
-projects: true
-about: true
-blog: true
-show-tags: true
-
 plugins:
   - jekyll-seo-tag
   - jekyll-gist

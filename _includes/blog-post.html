@@ -1,6 +1,6 @@
 <div class="item">
     <a class="url" href="{{ site.url }}{{ post.url }}">
-        <img class="preview" src="{{ post.image }}" />
+        <img class="preview" src="{% if post.image %}{{ post.image }}{% else %}{{ post.images[0] }}{% endif %}" />
         <div>
             <h3 class="title">{{ post.title }}</h3>
             <p class="description">{{ post.date | date:"%d-%m-%Y" }}</p>
