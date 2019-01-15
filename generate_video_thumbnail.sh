@@ -1,8 +1,13 @@
 #!/bin/bash
 
-filename=$(basename -- "$1")
-name="${filename%.*}"
+for a in "$@"
+do
+    echo "$a"
 
-ffmpeg -i "$1" -r 1 -vf scale=500:-1 -f image2 images/thumbs/"$name".jpg
+    filename=$(basename -- "$a")
+    name="${filename%.*}"
 
-echo $name
+    ffmpeg -i "$a" -r 1 -vf scale=500:-1 -f image2 images/thumbs/"$name".jpg
+
+    echo $name
+done
