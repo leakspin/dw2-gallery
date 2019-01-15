@@ -19,10 +19,10 @@ layout: page
     </div>
     <div class="image">
     {% if page.image %}
-        <img src="/images/{{ page.image }}" />
+        <img src="/images/web/{{ page.image }}" />
     {% else %}
         {% for image in page.images %}
-            <img src="/images/{{ image }}" />
+            <img src="/images/web/{{ image }}" />
         {% endfor %}
     {% endif %}
     </div>
