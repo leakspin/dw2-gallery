@@ -1,6 +1,7 @@
 .header-home
     display: flex
     margin: 0 auto
+    align-items: center
 
     > .title
         width: 50%
@@ -35,11 +36,17 @@
             align-items: center
             justify-content: end
 
+            @media #{$below}
+                flex-wrap: wrap
+
             > li
                 font-size: 1.85rem
                 font-weight: 300
                 font-style: normal
                 list-style: none
+
+                @media #{$below}
+                    width: 100%
 
                 > a
                     color: $gama
