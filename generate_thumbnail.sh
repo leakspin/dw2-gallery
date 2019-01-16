@@ -2,16 +2,18 @@
 
 for a in images/raw/*
 do
+    echo "$a"
 
     filename=$(basename -- "$a")
     extension="${filename##*.}"
 
-    if [ ! -f "images/thumbs/$filename" -a ! -f "images/web/$filename" ]
+    if [ ! -f "images/thumbs/$filename" ]
     then
-        echo "$a"
-
         ffmpeg -i "$a" -vf scale=500:-1 images/thumbs/"$filename"
+    fi
 
+    if [ ! -f "images/web/$filename" ]
+    then
         if [[ $extension == 'jpg' ]]
         then
             jpegtran -optimize -copy none -perfect -v "$a" > images/web/"$filename"
