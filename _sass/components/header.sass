@@ -13,6 +13,9 @@
             display: inline
             margin: 0
 
+            @media #{$below}
+                display: block
+
         a
             color: white
             text-decoration: none
@@ -31,6 +34,9 @@
             font-style: normal
             color: $gama
             width: 70%
+
+            @media #{$below}
+                width: 100%
 
     > .menu
         width: 50%
