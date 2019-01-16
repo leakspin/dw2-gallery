@@ -30,18 +30,42 @@
         width: 50%
         text-align: right
 
-        > ul li
-            display: inline-block
+        > ul
+            display: flex
+            align-items: center
+            justify-content: end
 
-            > a
-                color: white
+            > li
                 font-size: 1.85rem
                 font-weight: 300
                 font-style: normal
-                color: $gama
-                text-decoration: none
-                margin: 0 7px
+                list-style: none
 
-                &:hover
-                    color: white
-                    text-decoration: underline
+                > a
+                    color: $gama
+                    text-decoration: none
+                    margin: 0 7px
+
+                    &:hover
+                        color: white
+                        text-decoration: underline
+
+                    &.button
+                        background: #6441A4
+                        padding: 5px 10px
+                        border-radius: 4px
+                        color: white
+                        display: flex
+                        align-items: center
+
+                        &:hover
+                            text-decoration: none
+
+                        > p
+                            color: white
+                            margin: 0
+
+                    > .menu-icon
+                        width: 1.85rem
+                        margin-right: 10px
+                        border-radius: 0px

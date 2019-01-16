@@ -1,0 +1,17 @@
+<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+<div id="twitch-player" hidden></div>
+<script type="text/javascript">
+  var options = {
+    width: 0,
+    height: 0,
+    channel: "{{ site.twitch }}",
+  };
+  var player = new Twitch.Player("twitch-player", options);
+  player.pause();
+  player.addEventListener(Twitch.Player.ONLINE, function() {
+    document.getElementById('twitch-status').innerText = 'ON';
+  });
+  player.addEventListener(Twitch.Player.OFFLINE, function() {
+    document.getElementById('twitch-status').innerText = 'OFF';
+  });
+</script>
