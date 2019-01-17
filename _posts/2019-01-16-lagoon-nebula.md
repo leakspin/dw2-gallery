@@ -1,5 +1,5 @@
 ---
-title: "The way to Lagoon Nebula"
+title: "Lagoon Nebula"
 date: 2019-01-16 19:36:21 +0100
 images:
  - "2019-01-16 19-36-21 Lagoon Sector CQ-Y d140.png"
